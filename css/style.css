@@ -14,7 +14,6 @@ body{
 html, body {
     height: 100%;
     margin: 0;
-    position: relative;
     overflow-y: scroll;
     font-family: 'Bebas Neue', cursive;
 }
@@ -74,6 +73,7 @@ ol, ul{
 .responsive-image {
     float: left;
     opacity: 0.8;
+    border-radius: 50%;
 
 }
 
@@ -85,7 +85,8 @@ ol, ul{
 }
 
 .carousel-item {
-    min-height: 500px;
+    min-height:200px;
+    width: auto;
 }
 
 
