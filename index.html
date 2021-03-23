@@ -17,17 +17,50 @@
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/6f012fc61b.js" crossorigin="anonymous"></script>
 <script src="bootstrap-modal-carousel.js"></script>
+<script type="text/javascript" src="js/style.js"></script>
 
 </head>
 
-<style>
-.content {
-  max-width: 500px;
-  margin: auto;
-}
-</style>
 <body>
 
+    <!--Carousel Print-->
+<div class="intro" id="header">
+<div id="carousel-controls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="images/sheep-woods.jpeg" alt="grouse-drypoint">
+      <div class="carousel-caption d-none d-md-block">
+    <p> Mar Game Card, Etching, 2018</p>
+      <p>Isabella Hay</p>
+  </div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/vita.jpeg" alt="woodcock-drypoint">
+      <div class="carousel-caption d-none d-md-block">
+       <p>Cairnbulg Game Card, Etching, 2018</p>
+       <p>Isabella Hay 
+       </p>
+  </div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/thaisey.jpg" alt="wigeon-drypoint">
+      <div class="carousel-caption d-none d-md-block">
+           <p>Strathbeg Game Card, Etching, 2018</p>
+           <p>Isabella Hay </p>
+
+  </div>
+    </div>
+  <a class="carousel-control-prev" href="#carousel-controls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carousel-controls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
+</div>
 <!-- Navigation -->
     <nav class="navbar is-tab is-active navbar-expand-lg fixed-top">
       <div class="container">
@@ -62,263 +95,61 @@
         </div>
       </div>
     </nav>
+    
 
-   <div class="content">
-      <!--Carousel code taken from Bootstrap's carousel compnents and adjusted-->
-    <div class="carousel">
-    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img class="d-block w-100" src="images/sheep-woods.jpeg" alt="black-face-print">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="images/vita.jpeg" alt="vita">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="images/roe-buck.jpg" alt="roe-buck">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="images/black-face.jpg" alt="black-face">
-    </div>
-  </div>
-    </div>
-  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-</div>
+
+
+
+<!--Background Image-->
+
+
 
 
 <!--About-->
-<div class="about-section" id="about">
+<div class="content">
+<div class="about-section">
   <h3>About</h3>
 <p class="justify-content-center">
-<b>I am an artist from Morayshire who is currently living and working in Edinburgh. This site diplays images of both my artwork and shows a selection of photogrpahs that I have taken. My subject matter is wildlife although I have received commissions for other thins such as portraits of people and buildings. In 2012, I trained at the Florence Academy of Art in Italy for a summer semester - although I had been drawing for years before then. I undertook lessons in figure painting and academic drawing and learnt how to mix my own paints. While studying art history at Glasgow University, I continued taking commissions including animal portraits, cards and wall drawings. 
-I exhibited at the Game Fair in Scone, Scotland in 2016 in the "Artist in Action" marquee. My most recent skill has been computer programming. With this, I have built my own site (this one) and continue to learn the many ways in which I can expose my creativity online. While I enjoy ary, another major passion is wildlife. I observe it daily wherever I can and continue to sketch, photograph and paint what birds and animals I see in my local environment.
-</b>
+Edinglassie & Glenmarkie
+(from Glass Community website - probably too long?)
+The name, Edinglassie, or Eudan-glasaich in old Scots, means “steep grazing” – a pretty good description for those of us who have to traverse its gentle slopes in wet weather. It is good grazing land, and a charming old anecdote tells us that if you left your stick lying of an evening in June in the haughs of Edinglassie, there would be no point in going back to look for it in the morning as it would be so “happit ower wi’ grass” that you would never find it.
+Included in the property are the lands of Glenmarkie – in old Scots the “Valley of the Horses” – so called because of the custom of turning out the horses there for the summer after completion of the spring farm work.
 </p>
+<div class="link-btn">
+    <div class="m-0 text-center text-black">
+ <a class="link-btn" href="#" data-toggle="modal" data-target="#read-more">Read More...</a>
+</div>
 </div>
 
+                <!-- Modal -->
+                <div class="modal fade" id="read-more" tabindex="-1" role="dialog" aria-hidden="true">
+                  <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>                        
+                      <div class="modal-body"> 
 
+<p>
+    The lands of Edinglassie & Glenmarkie are split between Aberdeenshire and Banffshire. Early records show they belonged variously to Comyns, Douglases and Stewarts from the 13th century, eventually being purchased from the Stewart Lords of Balvenie by the Gordons in 1597.
+During the Revolution of 1688, which was brought about by the invasion of William of Orange, the Castle of Edinglassie (thought to have been built around 1515) was plundered and burnt by a detachment of highlanders on their way back home. The culprits were caught, hanged, and buried in a peat bog which, still to this day, is known as “Highlandmens’ Mossie”. The Castle was never rebuilt, and the Gordons eventually sold the lands to Alexander Duff of Braco in the mid 1690’s. Duff’s descendants became the Dukes of Fife. A line of boundary stones, marked “F” on the south facing side and “L” on the north side, runs from Braeton Hill to the Hill of Mackalea, and marks the division between the Duke of Fife’s property and that of the neighbouring Duke of Lennox & Gordon.
+The first Duke of Fife sold the lands in 1888 to John Walker, from Staffordshire, whose father had been a Minister in Huntly. Mr Walker built the current house as a shooting lodge, and there is a window dedicated to his memory in Glass Parish Church.
+Mr Walker transferred the lands to Mr George MacPherson from Wolverhampton, who was succeeded by his daughter, Eileen (his son having been killed in WW1), who married Commander Pinsent, R.N. The Pinsents made significant alterations to the house in the 1930’s, including the bay windows on the front and a new wing. On the Commander’s death in 1948, the property was sold to Major James Hay, the father of the current owner.
+At the end of WW2, the land was farmed by a myriad of smallholders. In the current owner’s lifetime, farming units were still in existence at Edinglassie Mains (the Duncans), Dumeath (the Shands), Townhead/Greens of Glenbeg (the Jamiesons), Chapelhill (the Stephens), and Glenbeg & Bonfail (the Gibbons). The estate farmed only Lowrie (used as dairy), and Glenmarkie. The current owner attended Glass Primary School with many of the children from these farms.
+However, the relentless mechanisation of farming left many in abject poverty as the holdings were no longer large enough to support the families who lived there. A lifeline was thrown to them in the form of the Farm Amalgamation Acts of the 1970’s, leading many to leave for a better life in the surrounding towns where they could escape the daily grind and allow their children to receive a proper education. The current owner’s father became a farmer by default as the holdings were left derelict and unwanted.
+The legacy of these cataclysmic changes can be seen today in the many abandoned buildings. The current owner has rescued 14 from dereliction, and these are now occupied by a mix of local tenants and estate employees. However, the remoteness of the locations and lack of utilities present significant challenges for the remainder. There were, apparently, 42 “reeking lums” on the property in its heyday. We are back to 26 currently, so still some way to go!
+
+</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
 <!--Background Image-->
 <div class="bgimg-1">     
 </div>      
-
-<!--Print-->
-<div class="print-section" id="print">
-                <h6>PRINT</h6>
-    <div class="row">
-    <div class="col-lg-6 col-md-6 col-sm-12 w-100">
-    <div class="card border-0" style="width: 30rem;">
-  <img class="card-img-top" src="images/run.jpeg" alt="black-face-print">
-  <div class="card-body">
-     <p class="card-text">Black Face - Spooked, Drypoint etching, 2019</p>
-     <p>Isabella Hay</p>
-  </div>
-    </div>
-    </div>
-
-
-<div class="col-lg-6 col-md-6 col-sm-12 w-100">
-    <div class="card border-0" style="width: 30rem;">
-  <img class="card-img-top" src="images/hare-print.jpeg" alt="hare-study-print">
-  <div class="card-body">
-      <p class="card-text">Hare Animation Study, Drypoint etching, 2019</p>
-      <p>Isabella Hay </p>
-    </div>
+<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+  <h3 style="text-align:center;">Edinglass</h3>
+  <p></p>
 </div>
-</div>
-    </div>
-</div>
-
-<!--Carousel Print-->
-<div class="carousel-print">
-<div id="carousel-controls" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img class="d-block w-100" src="images/mar.jpeg" alt="grouse-drypoint">
-      <div class="carousel-caption d-none d-md-block">
-    <p> Mar Game Card, Etching, 2018</p>
-      <p>Isabella Hay</p>
-  </div>
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="images/cairnbulg.jpeg" alt="woodcock-drypoint">
-      <div class="carousel-caption d-none d-md-block">
-       <p>Cairnbulg Game Card, Etching, 2018</p>
-       <p>Isabella Hay 
-       </p>
-  </div>
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="images/strathbeg.jpeg" alt="wigeon-drypoint">
-      <div class="carousel-caption d-none d-md-block">
-           <p>Strathbeg Game Card, Etching, 2018</p>
-           <p>Isabella Hay </p>
-
-  </div>
-    </div>
-  <a class="carousel-control-prev" href="#carousel-controls" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carousel-controls" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-</div>
-</div>
-
-
-<!--Background Image-->
-
-<div class="bgimg-2">
-</div>
-
-<!--Painting Section-->
-<div class="painting-section" id="painting">
-        <div class="container-fluid photo-content-container">
-            <h6>PAINTING</h6>
-
-    <!-- Beginning of Modal for Oils -->    
-    <div class="row">
-            <!-- Modal: Image 1 -->
-        <div class="col-sm-3">
-          <a class="d-block mb-4 h-100">
-            <img class="img-fluid img-hover" src="images/warthog.jpeg" data-toggle="modal" data-target="#img1" alt="warthog">
-          </a>
-          <!-- Modal Content -->
-        <div class="modal fade" id="img1" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-lg" role="document">
-                     <div class="modal-body">
-                        <img class="img-fluid" src="images/warthog.jpeg" alt="Warthog">
-                </div>
-            </div>
-        </div>
-        </div>
-            <!-- Modal: Image 2 -->        
-        <div class="col-sm-3">
-          <a class="d-block mb-4 h-100">
-            <img class="img-fluid img-hover" src="images/warthog-portrait.jpeg" data-toggle="modal" data-target="#img2" alt="warthog-portrait">
-          </a>
-          <!-- Modal Content -->
-        <div class="modal fade" id="img2" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-lg" role="document">
-                     <div class="modal-body">
-                        <img class="img-fluid" src="images/warthog-portrait.jpeg" alt="warthog-portrait">
-                </div>
-            </div>
-        </div>
-        </div>
-            <!-- Modal: Image 3 -->        
-        <div class="col-sm-3">
-          <a class="d-block mb-4 h-100">
-            <img class="img-fluid img-hover" src="images/lobster.jpeg" data-toggle="modal" data-target="#img3" alt="lobster">
-          </a>
-          <!-- Modal Content -->
-        <div class="modal fade" id="img3" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-lg" role="document">
-                     <div class="modal-body">
-                        <img class="img-fluid" src="images/lobster.jpeg" alt="lobster">
-                </div>
-            </div>
-        </div>
-        </div>      
-            <!-- Modal: Image 4 -->        
-        <div class="col-sm-3">
-          <a class="d-block mb-4 h-100">
-            <img class="img-fluid img-hover" src="images/thaisey-oil.jpeg" data-toggle="modal" data-target="#img4" alt="black-spaniel">
-          </a>
-          <!-- Modal Content -->
-        <div class="modal fade" id="img4" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-lg" role="document">
-                     <div class="modal-body">
-                        <img class="img-fluid" src="images/thaisey-oil.jpeg" alt="black-spaniel">
-                </div>
-            </div>
-        </div>
-        </div>         
-      </div>   
-    <!-- End of Modal for Oils -->
-
-<!--Painting Captions-->
-      <div class="painting-captions">
-          <p> Oil painting labels from left to right:Warthog, oil on paper, 2016. Warthog portrait, oil on paper, 2016. Lobster, oil on paper, 2017.   Thaisey, oil on paper, 2016.
-              </div>
-
-    <!-- Beginning of Modal for Watercolours -->    
-    <div class="row">
-            <!-- Modal: Image 1 -->
-        <div class="col-sm-3">
-          <a class="d-block mb-4 h-100">
-            <img class="img-fluid img-hover" src="images/humming-bird.JPG" data-toggle="modal" data-target="#Image1" alt="humming-bird">
-          </a>
-          <!-- Modal Content -->
-        <div class="modal fade" id="Image1" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-lg" role="document">
-                     <div class="modal-body">
-                        <img class="img-fluid" src="images/humming-bird.JPG" alt="humming-bird">
-                </div>
-            </div>
-        </div>
-        </div>
-            <!-- Modal: Image 2 -->        
-        <div class="col-sm-3">
-          <a class="d-block mb-4 h-100">
-            <img class="img-fluid img-hover" src="images/wader.jpeg" data-toggle="modal" data-target="#Image2" alt="wader">
-          </a>
-          <!-- Modal Content -->
-        <div class="modal fade" id="Image2" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-lg" role="document">
-                     <div class="modal-body">
-                        <img class="img-fluid" src="images/wader.jpeg" alt="wader">
-                </div>
-            </div>
-        </div>
-        </div>
-            <!-- Modal: Image 3 -->        
-        <div class="col-sm-3">
-          <a class="d-block mb-4 h-100">
-            <img class="img-fluid img-hover" src="images/hoopoe.jpeg" data-toggle="modal" data-target="#Image3" alt="hoopoe">
-          </a>
-          <!-- Modal Content -->
-        <div class="modal fade" id="Image3" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-lg" role="document">
-                     <div class="modal-body">
-                        <img class="img-fluid" src="images/hoopoe.jpeg" alt="hoopoe">
-                </div>
-            </div>
-        </div>
-        </div>      
-            <!-- Modal: Image 4 -->        
-        <div class="col-sm-3">
-          <a class="d-block mb-4 h-100">
-            <img class="img-fluid img-hover" src="images/wigeon-right.jpeg" data-toggle="modal" data-target="#Image4" alt="wigeon">
-          </a>
-          <!-- Modal Content -->
-        <div class="modal fade" id="Image4" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-lg" role="document">
-                     <div class="modal-body">
-                        <img class="img-fluid" src="images/wigeon-right.jpeg" alt="wigeon">
-                </div>
-            </div>
-        </div>
-        </div>         
-      </div>     
-    <div class="painting-captions">
-          <p> Watercolour painting labels from left to right: Humming Bird, watercolour on card, 2016. Wader, watercolour on paper, 2016.  Hoopoe, watercolour on paper, 2017.  Wigeon, watercolour on card, 2018.
-              </div>   
-        </div>
-
-<div class="bgimg-3">
-</div>
-
 <div class="container" id="wildlife-photography">
       <h6>Wildlife Photography</h6>
       <div class="row">
@@ -354,7 +185,17 @@ I exhibited at the Game Fair in Scone, Scotland in 2016 in the "Artist in Action
         </div>
   </div>
 </div>
+
+
+
+
+
+<div class="bgimg-2">
 </div>
+
+<div class="bgimg-3">
+</div>
+
 
 
 
