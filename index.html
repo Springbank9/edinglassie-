@@ -27,44 +27,6 @@ crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
 
-<script type="text/javascript">
-/// some script
-
-// jquery ready start
-$(document).ready(function() {
-	// jQuery code
-
-	// add padding top to show content behind navbar
-	$('body').css('padding-top', $('.navbar').outerHeight() + 'px')
-
-	//////////////////////// detect scroll top or down
-    if ($('.smart-scroll').length > 0) { // check if element exists
-         var last_scroll_top = 0;
-        $(window).on('scroll', function() {
-            scroll_top = $(this).scrollTop();
-            if(scroll_top < last_scroll_top) {
-                $('.smart-scroll').removeClass('scrolled-down').addClass('scrolled-up');
-            }
-            else {
-                $('.smart-scroll').removeClass('scrolled-up').addClass('scrolled-down');
-            }
-            last_scroll_top = scroll_top;
-        });
-    }
-
-	
-}); // jquery end
-
-(function($) {
-  $(window).load(function() {
-    $('#content').css('top',$('#header img').height()+'px');
-  });
-  $(window).resize(function() {
-    $('#content').css('top',$('#header img').height()+'px');
-  });
-})(jQuery);
-</script>
-
 <style type="text/css">
 
 .smart-scroll{
@@ -130,11 +92,13 @@ body {
   <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">LESS HEIGHT</span>
   </div>
     </div>
+  </div>
     <div class="carousel-item">
       <img class="d-block w-100" src="images/vita.jpeg" alt="woodcock-drypoint">
       <div class="caption">
   <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">LESS HEIGHT</span>
   </div>
+    </div>
     <div class="carousel-item">
       <img class="d-block w-100" src="images/thaisey.jpg" alt="wigeon-drypoint">
       <div class="caption">
@@ -152,7 +116,6 @@ body {
 </div>
 </div>
 </div>
-    </div>
 
 
 <!--Navigation-->
@@ -224,9 +187,87 @@ The legacy of these cataclysmic changes can be seen today in the many abandoned 
 <div style="color: #777;background-color:white;padding:50px 80px;text-align: justify;">
   <h3 style="text-align:center;">Edinglassie</h3>
 
+
+<!--Intro Boxes -->
+
+ <div class="py-5">
+    <div class="container">
+      <div class="row hidden-md-up">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-block">
+              <h4 class="card-title">Card title</h4>
+              <h6 class="card-subtitle text-muted">Support card subtitle</h6>
+              <p class="card-text p-y-1">Some quick example text to build on the card title .</p>
+              <a href="#" class="card-link">link</a>
+              <a href="#" class="card-link">Second link</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-block">
+              <h4 class="card-title">Card title</h4>
+              <h6 class="card-subtitle text-muted">Support card subtitle</h6>
+              <p class="card-text p-y-1">Some quick example text to build on the card title .</p>
+              <a href="#" class="card-link">link</a>
+              <a href="#" class="card-link">Second link</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-block">
+              <h4 class="card-title">Card title</h4>
+              <h6 class="card-subtitle text-muted">Support card subtitle</h6>
+              <p class="card-text p-y-1">Some quick example text to build on the card title .</p>
+              <a href="#" class="card-link">link</a>
+              <a href="#" class="card-link">Second link</a>
+            </div>
+          </div>
+        </div>
+      </div><br>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-block">
+              <h4 class="card-title">Card title</h4>
+              <h6 class="card-subtitle text-muted">Support card subtitle</h6>
+              <p class="card-text p-y-1">Some quick example text to build on the card title .</p>
+              <a href="#" class="card-link">link</a>
+              <a href="#" class="card-link">Second link</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-block">
+              <h4 class="card-title">Card title</h4>
+              <h6 class="card-subtitle text-muted">Support card subtitle</h6>
+              <p class="card-text p-y-1">Some quick example text to build on the card title .</p>
+              <a href="#" class="card-link">link</a>
+              <a href="#" class="card-link">Second link</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-block">
+              <h4 class="card-title">Card title</h4>
+              <h6 class="card-subtitle text-muted">Support card subtitle</h6>
+              <p class="card-text p-y-1">Some quick example text to build on the card title .</p>
+              <a href="#" class="card-link">link</a>
+              <a href="#" class="card-link">Second link</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
   <div class="row">
 <!--Food & Farming-->
-      <div class="col-lg-3 col-sm-12" style="width: 18rem;">
+      <div class="col-lg-3 col-sm-12>
       <img class="card-img-top" src="images/roe-buck.jpg" alt="card-image">
       <p>&nbsp;</p>
   <div class="title">
@@ -235,7 +276,7 @@ The legacy of these cataclysmic changes can be seen today in the many abandoned 
   </div>
   </div>
   <!--Sporting-->
-  <div class="col-lg-4 col-sm-12" style="width: 18rem;">
+  <div class="col-lg-4 col-sm-12">
       <img class="card-img-top" src="images/roe-buck.jpg" alt="card-image">
       <p>&nbsp;</p>
   <div class="title">
@@ -243,15 +284,15 @@ The legacy of these cataclysmic changes can be seen today in the many abandoned 
   </div>
   </div>
 <!--Holiday Lets-->
-  <div class="col-lg-4 col-sm-12" style="width: 18rem;">
+  <div class="col-lg-4 col-sm-12">
       <img class="card-img-top" src="images/roe-buck.jpg" alt="card-image">
       <p>&nbsp;</p>
   <div class="title">
       <h3>Holiday Lets &gt;</h3>
   </div>
 </div>
-<!--Residentail Lets-->
-  <div class="col-lg-4 col-sm-12" style="width: 18rem;">
+<!--Residential Lets-->
+  <div class="col-lg-4 col-sm-12">
       <img class="card-img-top" src="images/roe-buck.jpg" alt="card-image">
       <p>&nbsp;</p>
   <div class="title">
