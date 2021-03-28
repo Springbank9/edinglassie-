@@ -114,7 +114,10 @@ ol, ul{
   min-height: 100%;
 }
 
-
+.card-img-top {
+    padding: 10px;
+    margin: 10px;
+}
 
 @media (min-width: 992px) {
   body {
