@@ -24,11 +24,52 @@ body {
   
 #header {
     position:fixed;
-    margin: 0px;
+    margin-top: -57px;
     padding: 0px;
     z-index:100;
     max-width: 100%;
-    height: 50%;
+    height: auto;
+    position: relative;
+  opacity: 0.75;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: white;
+}
+
+.caption span {
+	font-size: 20px;
+    letter-spacing: 10px;
+    background-color:transparent;
+    font-size:30px;
+    font-weight: 300px;
+    letter-spacing: 10px;
+    color: #f7f7f7;
 }
 
 .smart-scroll{
@@ -50,6 +91,7 @@ body {
   padding: 0px;
   background-color: transparent;
   border-bottom: 2px solid white;
+  border-top: none;
   font-family: 'Bebas Neue', cursive;
 }
 
@@ -71,14 +113,9 @@ ol, ul{
     z-index:200;
     width:100%;
     margin:0 auto;
-    height: 90%;
+    height: 100%;
 }
 
-.card-block {
-    padding: 0px;
-    margin: 0px;
-    border: none;
-}
 
 .card {
     border: 1px solid #e5e5e5;
@@ -114,10 +151,6 @@ ol, ul{
   min-height: 100%;
 }
 
-.card-img-top {
-    padding: 10px;
-    margin: 10px;
-}
 
 @media (min-width: 992px) {
   body {
@@ -159,13 +192,6 @@ h3 {
   font-weight: 900;
 font-family: 'Bebas Neue', cursive;}
 
-.caption {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  width: 100%;
-  text-align: center;
-}
 
 p { 
     color: #777;
@@ -175,13 +201,6 @@ p {
       font-size: x-small;
 }
 
-.carousel-caption p {
-    color: #777;
-      margin-bottom: 0.5px;
-      font-weight: lighter;
-      text-align: left;
-      font-size: x-small;
-}
   
 .caption span.border {
     color: #777;
@@ -221,21 +240,6 @@ font-family: 'Bebas Neue', cursive;}
       flex-basis: 33%;
     }
   }
-
-
-
-
-
-
-
-.carousel-caption {
-    color: black;
-    font-size: small;
-    font-weight: bold;
-}
-
-
-
 
 .modal-body{
     text-align: center;
