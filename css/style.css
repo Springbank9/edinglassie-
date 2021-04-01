@@ -22,36 +22,23 @@ body {
 
   }
 
-  .navbar-light {
-    position: fixed;
-    background-color: white;
+  .carousel {
+    background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
+
+.carousel-item {
+    min-height: 100%;
+}
+
+
 .nav-item .nav-link {
     font-family:'Bebas Neue', cursive;
     font-weight: 300;
     text-transform: uppercase;
-}
-
-.carousel {
-    margin: 10px;
-    padding: 10px;
-
-}
-
-  .navbar-light {
-    position: fixed;
-    background-color: white;
-}
-.nav-item .nav-link {
-    font-family:'Bebas Neue', cursive;
-    font-weight: 300;
-    text-transform: uppercase;
-}
-
-
-
-.heading {
-min-height: 100%;
 }
   
 #header {
