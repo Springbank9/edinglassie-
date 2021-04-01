@@ -65,12 +65,21 @@ body {
 </head>
 <body>
 
+<style>
+.content {
+  max-width: 500px;
+  margin: auto;
+}
+</style>
+<body>
 
-    <!-- Navigation -->
+<div class="content">
+</div>
+       <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
       <div class="container">
         <a class="navbar-brand" href="index.html">
-            <img class="responsive-image img-thumbnail ml-3" src="images/header-image.png" alt="black-face-print" style="height: 66px;"></a>
+            <h2>LOGO</h2></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -86,7 +95,12 @@ body {
               <a class="nav-link" href="#whatwedo">What We Do</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#visitus">Visit Us</a>
+              <a class="nav-link" href="#visit">Visit Us
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact
+              </a>
             </li>
     <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
@@ -96,21 +110,18 @@ body {
       </div>
     </nav>
    
-    <!--Navigation-->
-
-
-
-   <div class="carousel">
+    <!--Carousel code taken from Bootstrap's carousel compnents and adjusted-->
+    <div class="carousel">
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block w-100" src="images/black-face.jpg" alt="black-face-print">
-    </div>
-    <div class="carousel-item">
       <img class="d-block w-100" src="images/thaisey.jpg" alt="black-face-print">
     </div>
     <div class="carousel-item">
       <img class="d-block w-100" src="images/vita.jpeg" alt="black-face-print">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/lambs-up.jpg" alt="black-face-print">
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -123,8 +134,7 @@ body {
   </a>
 </div>
 </div>
-
-
+    
 <!--About-->
 <div class="about-section" id="content">
       <h3 id="about">Edinglassie</h3>
@@ -163,8 +173,7 @@ The legacy of these cataclysmic changes can be seen today in the many abandoned 
                 </div>
 </div>
 
-
-  <h3 style="text-align:center;">What We Do</h3>
+  <h3 style="text-align:center;">WHAT WE DO</h3>
 
 <!--Intro Boxes -->
 
@@ -174,36 +183,33 @@ The legacy of these cataclysmic changes can be seen today in the many abandoned 
       <div class="row hidden-md-up" id="whatwedo">
         <div class="col-md-4">
           <div class="card">
-            <img src="images/lambs-up.jpg" class="mr-3" alt="lambs"><a href="#" class="stretched-link"></a>
+            <img src="images/lambs-up.jpg" class="mr-3" alt="lambs"><a href="food&farming.html" class="stretched-link"></a>
   <div class="media-body">
-    <h5 class="mt-0">Media with stretched link</h5>
-    <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+    <h5 class="mt-0" id="text">FOOD & FARMING</h5>
   </div>
           </div>
         </div>
         <div class="col-md-4">
           <div class="card">
-            <img src="images/thaisey.jpg" class="mr-3" alt="thaisey"><a href="#" class="stretched-link"></a>
+            <img src="images/thaisey.jpg" class="mr-3" alt="thaisey"><a href="sporting.html" class="stretched-link"></a>
   <div class="media-body">
-    <h5 class="mt-0">Media with stretched link</h5>
-    <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+    <h5 class="mt-0">SPORTING</h5>
   </div>
             </div>
           </div>
         <div class="col-md-4">
           <div class="card">
-            <img src="images/smithy-cottage.jpeg" class="mr-3" alt="smithy-cottage"><a href="#" class="stretched-link"></a>
+            <img src="images/smithy-cottage.jpeg" class="mr-3" alt="smithy-cottage"><a href="holiday-accommodation.html" class="stretched-link"></a>
   <div class="media-body">
-    <h5 class="mt-0">Media with stretched link</h5>
-    <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+    <h5 class="mt-0">HOLIDAY ACCOMMODATION</h5>
   </div>
           </div>
         </div>
         <div class="col-md-6">
           <div class="card">
-            <img src="images/cottage.jpg" class="mr-3" alt="cottage"><a href="#" class="stretched-link"></a>
+            <img src="images/cottage.jpg" class="mr-3" alt="cottage"><a href="residential.html" class="stretched-link"></a>
   <div class="media-body">
-    <h5 class="mt-0">Media with stretched link</h5>
+    <h5 class="mt-0">RESIDNTIAL LETS</h5>
     <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
   </div>
           </div>

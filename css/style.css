@@ -27,7 +27,23 @@ body {
     background-color: white;
 }
 .nav-item .nav-link {
-    font-family:"Lato", sans-serif;
+    font-family:'Bebas Neue', cursive;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.carousel {
+    margin: 10px;
+    padding: 10px;
+
+}
+
+  .navbar-light {
+    position: fixed;
+    background-color: white;
+}
+.nav-item .nav-link {
+    font-family:'Bebas Neue', cursive;
     font-weight: 300;
     text-transform: uppercase;
 }
@@ -95,6 +111,28 @@ ol, ul{
     list-style:none;
 }
 
+#container {
+  position: relative;
+}
+.card {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+#text {
+  z-index: 100;
+  position: absolute;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  left: 150px;
+  top: 350px;
+}
+.container {
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
 #content {
     position:relative;
     z-index:200;
@@ -147,22 +185,6 @@ ol, ul{
     padding-top: 56px;
   }
 }
-
-.responsive-image {
-    float: left;
-    opacity: 0.8;
-    border-radius: 50%;
-
-}
-
-
-.carousel-item {
-   min-height: 100vh;
-    width: auto;
-    padding: 0px;
-    margin: 0px;
-}
-
 
 .about-section {
     background-color:white;
