@@ -1,36 +1,8 @@
 
-
-html{
-    overflow-y:scroll; 
-    max-width:  100%}
-
-
-html, body {
-    height: 100%;
-    margin: 0;
-    overflow-x:hidden;
-    overflow-y: scroll;
-    font-family: 'Bebas Neue', cursive;
-}
-
-body {
-  font-family: 'Bebas Neue', cursive;
-  font-size: 13px;
-  font-weight: 400;
-  position: relative;
-  height: 100%;
-
-  }
-
-  .carousel-item {
-      margin-top: 0px;
-  height: 100vh;
-  min-height: 350px;
-  background: no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  header {
+    height:180vh;
+    min-height:400px;
+    background-size:cover;
 }
 
 .nav-item .nav-link {
@@ -39,27 +11,9 @@ body {
     text-transform: uppercase;
 }
 
-.caption {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  width: 100%;
-  text-align: center;
-  color: white;
+.navbar-container {
+    padding: 20px 0 20px 0;
 }
-
-
-.caption span {
-	font-size: 20px;
-    letter-spacing: 10px;
-    background-color:transparent;
-    font-size:30px;
-    font-weight: 300px;
-    letter-spacing: 10px;
-    color: #f7f7f7;
-}
-
-
 .navbar {
   margin: 0px;
   padding: 0px;
@@ -79,13 +33,133 @@ ol, ul{
     list-style:none;
 }
 
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 500%;
+  height: 100%;
+  animation: animate 10s linear infinite;
+}
+
+.slider .slide {
+  position: relative;
+  width: 20%;
+  height: 100%;
+  float: left;
+}
+
+.slider .slide .caption {
+  position: absolute;
+  bottom: 60px;
+  left: 60px;
+  right: 60px;
+  padding: 30px;
+  background: rgba(0, 0, 0, .5);
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+.slider .slide .caption h2 {
+  margin: 0 0 20;
+  padding: 0;
+  color: #fff;
+  font-size: 48px;
+  transition: 0.5s;
+}
+
+.slider .slide .caption p {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-size: 20px;
+  transition: 0.5s;
+}
+
+@media (max-width: 768px) {
+  .slider .slide .caption {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    padding: 20px;
+  }
+  .slider .slide .caption h2 {
+    margin: 0 0 10;
+    font-size: 30px;
+  }
+  .slider .slide .caption p {
+    font-size: 16px;
+  }
+}
+
+@keyframes animate {
+  0% {
+      left: 0;
+  }
+  20% {
+      left: 0;
+  }
+  25% {
+      left: -100%;
+  }
+  45% {
+      left: -100%;
+  }
+  50% {
+      left: -200%;
+  }
+  70% {
+      left: -200%;
+  }
+  75% {
+      left: -300%;
+  }
+  95% {
+      left: -300%;
+  }
+  100% {
+      left: -400%;
+  }
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.image-responsive {
+    overflow: hidden;
+}
+
+.container .slider .slide.image1 {
+  background: url(../images/grouse.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+
+.container .slider .slide.slide3 {
+  background: url(../images/owl.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.container .slider .slide.slide4 {
+  background: url(../images/roe-buck.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.hidden-spacer {
+    height: 56px
+}
 .about-section {
         margin: 20px 10px 20px 10px;
 
 }
-#container {
-  position: relative;
-}
+
 .card {
   position: absolute;
   left: 0;
