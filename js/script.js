@@ -16,3 +16,5 @@ if ($('.smart-scroll').length > 0) { // check if element exists
     });
 }
 
+$('#carouselFade').carousel();
+
