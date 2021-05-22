@@ -18,3 +18,10 @@ if ($('.smart-scroll').length > 0) { // check if element exists
 
 $('#carouselFade').carousel();
 
+$(function() {
+  $('a[href*=#]').on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+  });
+});
+
