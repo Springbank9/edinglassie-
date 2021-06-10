@@ -1,155 +1,446 @@
-
-<!DOCTYPE html>
-<html lang="en">
+    <!DOCTYPE html>
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="keywords" content="htmlcss bootstrap hide show menu, navbar, menu examples" />
-<meta name="description" content="Edinglassie and Glenmarkie website for farming, shooting, conservation and holiday lets" />
-<title>Edinglassie & Glenmarkie | Ecological Farming</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.83.1">
+    <title>Carousel Template · Bootstrap v5.0</title>
 
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+    <!-- Bootstrap core CSS -->
+<link href="/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- Favicons -->
+<link rel="apple-touch-icon" href="/docs/5.0/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/docs/5.0/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/5.0/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
+<link rel="icon" href="/docs/5.0/assets/img/favicons/favicon.ico">
+<meta name="theme-color" content="#7952b3">
+<link href="css/carousel.css" rel="stylesheet">  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
 <!-- jQuery -->
 <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
 crossorigin="anonymous"></script>
-<link rel="stylesheet" href="css/style.css" type="text/css">
-<!--Bootstrap-->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
- <!-- jQuery -->
-<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-crossorigin="anonymous"></script>
-<!-- Bootstrap files (jQuery first, then Popper.js, then Bootstrap JS) -->
-<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" type="text/javascript"></script>
-<!--Fonts/Icons-->
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-<script src="https://kit.fontawesome.com/6f012fc61b.js" crossorigin="anonymous"></script>
-<!--Javascript-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+<script src="js/script.js"></script>
 </head>
-<body>
-  <nav>
-    <div class="wrapper">
-      <div class="logo"><a href="#">Edinglassie | Glenmarkie</a></div>
-      <input type="radio" name="slider" id="menu-btn">
-      <input type="radio" name="slider" id="close-btn">
-      <ul class="nav-links">
-        <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li>
-          <a href="#" class="desktop-item">Dropdown Menu</a>
-          <input type="checkbox" id="showDrop">
-          <label for="showDrop" class="mobile-item">Dropdown Menu</label>
-          <ul class="drop-menu">
-            <li><a href="#">Drop menu 1</a></li>
-            <li><a href="#">Drop menu 2</a></li>
-            <li><a href="#">Drop menu 3</a></li>
-            <li><a href="#">Drop menu 4</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#" class="desktop-item">Mega Menu</a>
-          <input type="checkbox" id="showMega">
-          <label for="showMega" class="mobile-item">Mega Menu</label>
-          <div class="mega-box">
-            <div class="content">
-              <div class="row">
-                <img src="images/herd.jpg" alt="">
-              </div>
-              <div class="row">
-                <header>Design Services</header>
-                <ul class="mega-links">
-                  <li><a href="#">Graphics</a></li>
-                  <li><a href="#">Vectors</a></li>
-                  <li><a href="#">Business cards</a></li>
-                  <li><a href="#">Custom logo</a></li>
-                </ul>
-              </div>
-              <div class="row">
-                <header>Email Services</header>
-                <ul class="mega-links">
-                  <li><a href="#">Personal Email</a></li>
-                  <li><a href="#">Business Email</a></li>
-                  <li><a href="#">Mobile Email</a></li>
-                  <li><a href="#">Web Marketing</a></li>
-                </ul>
-              </div>
-              <div class="row">
-                <header>Security services</header>
-                <ul class="mega-links">
-                  <li><a href="#">Site Seal</a></li>
-                  <li><a href="#">VPS Hosting</a></li>
-                  <li><a href="#">Privacy Seal</a></li>
-                  <li><a href="#">Website design</a></li>
-                </ul>
+   
+       
+
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark d-none d-lg-block" style="z-index: 2000;">
+        <div class="container-fluid">
+          <!-- Navbar brand -->
+          <a class="navbar-brand nav-link" target="_blank" href="https://mdbootstrap.com/docs/standard/">
+            <strong>MDB</strong>
+          </a>
+          <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01"
+            aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarExample01">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item active">
+                <a class="nav-link" aria-current="page" href="#intro">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.youtube.com/channel/UC5CF7mLQZhvx8O5GODZAhdA" rel="nofollow"
+                  target="_blank">Learn Bootstrap 5</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://mdbootstrap.com/docs/standard/" target="_blank">Download MDB UI KIT</a>
+              </li>
+            </ul>
+
+            <ul class="navbar-nav d-flex flex-row">
+              <!-- Icons -->
+              <li class="nav-item me-3 me-lg-0">
+                <a class="nav-link" href="https://www.youtube.com/channel/UC5CF7mLQZhvx8O5GODZAhdA" rel="nofollow"
+                  target="_blank">
+                  <i class="fab fa-youtube"></i>
+                </a>
+              </li>
+              <li class="nav-item me-3 me-lg-0">
+                <a class="nav-link" href="https://www.facebook.com/mdbootstrap" rel="nofollow" target="_blank">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li class="nav-item me-3 me-lg-0">
+                <a class="nav-link" href="https://twitter.com/MDBootstrap" rel="nofollow" target="_blank">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li class="nav-item me-3 me-lg-0">
+                <a class="nav-link" href="https://github.com/mdbootstrap/mdb-ui-kit" rel="nofollow" target="_blank">
+                  <i class="fab fa-github"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar -->
+
+      <!-- Carousel wrapper -->
+      <div id="introCarousel" class="carousel slide carousel-fade shadow-2-strong" data-mdb-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-mdb-target="#introCarousel" data-mdb-slide-to="0" class="active"></li>
+          <li data-mdb-target="#introCarousel" data-mdb-slide-to="1"></li>
+          <li data-mdb-target="#introCarousel" data-mdb-slide-to="2"></li>
+        </ol>
+
+        <!-- Inner -->
+        <div class="carousel-inner">
+          <!-- Single item -->
+          <div class="carousel-item active">
+            <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+              <div class="d-flex justify-content-center align-items-center h-100">
+                <div class="text-white text-center">
+                  <h1 class="mb-3">Learn Bootstrap 5 with MDB</h1>
+                  <h5 class="mb-4">Best & free guide of responsive web design</h5>
+                  <a
+                    class="btn btn-outline-light btn-lg m-2"
+                    href="https://www.youtube.com/watch?v=c9B4TPnak1A"
+                    role="button"
+                    rel="nofollow"
+                    target="_blank"
+                    >Start tutorial</a
+                  >
+                  <a
+                    class="btn btn-outline-light btn-lg m-2"
+                    href="https://mdbootstrap.com/docs/standard/"
+                    target="_blank"
+                    role="button"
+                    >Download MDB UI KIT</a
+                  >
+                </div>
               </div>
             </div>
           </div>
-        </li>
-        <li><a href="#">Feedback</a></li>
-      </ul>
-      <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
-    </div>
-  </nav>
 
-  <header class="header-img">
-  </header>
+          <!-- Single item -->
+          <div class="carousel-item">
+            <div class="mask" style="background-color: rgba(0, 0, 0, 0.3);">
+              <div class="d-flex justify-content-center align-items-center h-100">
+                <div class="text-white text-center">
+                  <h2>You can place here any content</h2>
+                </div>
+              </div>
+            </div>
+          </div>
 
-  <div class="body-text">
-    <div class="title"><h3>Edinglassie</h3></div>
-    <div class="sub-title"><p>Edinglassie & Glenmarkie
-(from Glass Community website - probably too long?)
-The name, Edinglassie, or Eudan-glasaich in old Scots, means “steep grazing” – a pretty good description for those of us who have to traverse its gentle slopes in wet weather. It is good grazing land, and a charming old anecdote tells us that if you left your stick lying of an evening in June in the haughs of Edinglassie, there would be no point in going back to look for it in the morning as it would be so “happit ower wi’ grass” that you would never find it.
-Included in the property are the lands of Glenmarkie – in old Scots the “Valley of the Horses” – so called because of the custom of turning out the horses there for the summer after completion of the spring farm work.
-</p>>
-<div class="link-btn">
-    <div class="m-0 text-center text-black">
- <a class="link-btn" href="#" data-toggle="modal" data-target="#read-more">Read More...</a>
-</div>
-</div>
-</div>
-  </div>
+          <!-- Single item -->
+          <div class="carousel-item">
+            <div
+              class="mask"
+              style="
+                background: linear-gradient(
+                  45deg,
+                  rgba(29, 236, 197, 0.7),
+                  rgba(91, 14, 214, 0.7) 100%
+                );
+              "
+            >
+              <div class="d-flex justify-content-center align-items-center h-100">
+                <div class="text-white text-center">
+                  <h2>And cover it with any mask</h2>
+                  <a
+                    class="btn btn-outline-light btn-lg m-2"
+                    href="https://mdbootstrap.com/docs/standard/content-styles/masks/"
+                    target="_blank"
+                    role="button"
+                    >Learn about masks</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Inner -->
 
-  
+        <!-- Controls -->
+        <a class="carousel-control-prev" href="#introCarousel" role="button" data-mdb-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#introCarousel" role="button" data-mdb-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <!-- Carousel wrapper -->
+    </header>
+    <!--Main Navigation-->
 
-                <!-- Modal -->
-                <div class="modal fade" id="read-more" tabindex="-1" role="dialog" aria-hidden="true">
-                  <div class="modal-dialog modal-lg" role="document">
-                    <div class="modal-content">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>                        
-                      <div class="modal-body"> 
-<p>
-    The lands of Edinglassie & Glenmarkie are split between Aberdeenshire and Banffshire. Early records show they belonged variously to Comyns, Douglases and Stewarts from the 13th century, eventually being purchased from the Stewart Lords of Balvenie by the Gordons in 1597.
-During the Revolution of 1688, which was brought about by the invasion of William of Orange, the Castle of Edinglassie (thought to have been built around 1515) was plundered and burnt by a detachment of highlanders on their way back home. The culprits were caught, hanged, and buried in a peat bog which, still to this day, is known as “Highlandmens’ Mossie”. The Castle was never rebuilt, and the Gordons eventually sold the lands to Alexander Duff of Braco in the mid 1690’s. Duff’s descendants became the Dukes of Fife. A line of boundary stones, marked “F” on the south facing side and “L” on the north side, runs from Braeton Hill to the Hill of Mackalea, and marks the division between the Duke of Fife’s property and that of the neighbouring Duke of Lennox & Gordon.
-The first Duke of Fife sold the lands in 1888 to John Walker, from Staffordshire, whose father had been a Minister in Huntly. Mr Walker built the current house as a shooting lodge, and there is a window dedicated to his memory in Glass Parish Church.
-Mr Walker transferred the lands to Mr George MacPherson from Wolverhampton, who was succeeded by his daughter, Eileen (his son having been killed in WW1), who married Commander Pinsent, R.N. The Pinsents made significant alterations to the house in the 1930’s, including the bay windows on the front and a new wing. On the Commander’s death in 1948, the property was sold to Major James Hay, the father of the current owner.
-At the end of WW2, the land was farmed by a myriad of smallholders. In the current owner’s lifetime, farming units were still in existence at Edinglassie Mains (the Duncans), Dumeath (the Shands), Townhead/Greens of Glenbeg (the Jamiesons), Chapelhill (the Stephens), and Glenbeg & Bonfail (the Gibbons). The estate farmed only Lowrie (used as dairy), and Glenmarkie. The current owner attended Glass Primary School with many of the children from these farms.
-However, the relentless mechanisation of farming left many in abject poverty as the holdings were no longer large enough to support the families who lived there. A lifeline was thrown to them in the form of the Farm Amalgamation Acts of the 1970’s, leading many to leave for a better life in the surrounding towns where they could escape the daily grind and allow their children to receive a proper education. The current owner’s father became a farmer by default as the holdings were left derelict and unwanted.
-The legacy of these cataclysmic changes can be seen today in the many abandoned buildings. The current owner has rescued 14 from dereliction, and these are now occupied by a mix of local tenants and estate employees. However, the remoteness of the locations and lack of utilities present significant challenges for the remainder. There were, apparently, 42 “reeking lums” on the property in its heyday. We are back to 26 currently, so still some way to go!
+    <!--Main layout-->
+    <main class="mt-5">
+      <div class="container">
+        <!--Section: Content-->
+        <section>
+          <div class="row">
+            <div class="col-md-6 gx-5 mb-4">
+              <div class="bg-image hover-overlay ripple shadow-2-strong rounded-5" data-mdb-ripple-color="light">
+                <img src="https://mdbootstrap.com/img/new/slides/031.jpg" class="img-fluid" />
+                <a href="#!">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+              </div>
+            </div>
 
-</p>
-                      </div>
+            <div class="col-md-6 gx-5 mb-4">
+              <h4><strong>Facilis consequatur eligendi</strong></h4>
+              <p class="text-muted">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis consequatur
+                eligendi quisquam doloremque vero ex debitis veritatis placeat unde animi laborum
+                sapiente illo possimus, commodi dignissimos obcaecati illum maiores corporis.
+              </p>
+              <p><strong>Doloremque vero ex debitis veritatis?</strong></p>
+              <p class="text-muted">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod itaque voluptate
+                nesciunt laborum incidunt. Officia, quam consectetur. Earum eligendi aliquam illum
+                alias, unde optio accusantium soluta, iusto molestiae adipisci et?
+              </p>
+            </div>
+          </div>
+        </section>
+        <!--Section: Content-->
+
+        <hr class="my-5" />
+
+        <!--Section: Content-->
+        <section class="text-center">
+          <h4 class="mb-5"><strong>Facilis consequatur eligendi</strong></h4>
+
+          <div class="row">
+            <div class="col-lg-4 col-md-12 mb-4">
+              <div class="card">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                  <img
+                    src="images/hill.jpeg"
+                    class="img-fluid"
+                  />
+                  <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make up the bulk of the
+                    card's content.
+                  </p>
+                  <a href="#!" class="btn btn-primary">Button</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                  <img
+                    src="images/brown-calf.jpeg"
+                    class="img-fluid"
+                  />
+                  <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make up the bulk of the
+                    card's content.
+                  </p>
+                  <a href="#!" class="btn btn-primary">Button</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                  <img
+                    src="images/black-face-lambs.jpeg"
+                    class="img-fluid"
+                  />
+                  <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make up the bulk of the
+                    card's content.
+                  </p>
+                  <a href="#!" class="btn btn-primary">Button</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--Section: Content-->
+
+        <hr class="my-5" />
+
+        <!--Section: Content-->
+        <section class="mb-5">
+          <h4 class="mb-5 text-center"><strong>Facilis consequatur eligendi</strong></h4>
+
+          <div class="row d-flex justify-content-center">
+            <div class="col-md-6">
+              <form>
+                <!-- 2 column grid layout with text inputs for the first and last names -->
+                <div class="row mb-4">
+                  <div class="col">
+                    <div class="form-outline">
+                      <input type="text" id="form3Example1" class="form-control" />
+                      <label class="form-label" for="form3Example1">First name</label>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="form-outline">
+                      <input type="text" id="form3Example2" class="form-control" />
+                      <label class="form-label" for="form3Example2">Last name</label>
                     </div>
                   </div>
                 </div>
 
-    
-    <!-- Footer -->
-    <footer class="py-5 bg-light">
-        <div class="footer">
-        <p class="m-0 text-center text-black">Copyright &copy; Edinglassie</p>
+                <!-- Email input -->
+                <div class="form-outline mb-4">
+                  <input type="email" id="form3Example3" class="form-control" />
+                  <label class="form-label" for="form3Example3">Email address</label>
+                </div>
+
+                <!-- Password input -->
+                <div class="form-outline mb-4">
+                  <input type="password" id="form3Example4" class="form-control" />
+                  <label class="form-label" for="form3Example4">Password</label>
+                </div>
+
+                <!-- Checkbox -->
+                <div class="form-check d-flex justify-content-center mb-4">
+                  <input
+                    class="form-check-input me-2"
+                    type="checkbox"
+                    value=""
+                    id="form2Example3"
+                    checked
+                  />
+                  <label class="form-check-label" for="form2Example3">
+                    Subscribe to our newsletter
+                  </label>
+                </div>
+
+                <!-- Submit button -->
+                <button type="submit" class="btn btn-primary btn-block mb-4">
+                  Sign up
+                </button>
+
+                <!-- Register buttons -->
+                <div class="text-center">
+                  <p>or sign up with:</p>
+                  <button type="button" class="btn btn-primary btn-floating mx-1">
+                    <i class="fab fa-facebook-f"></i>
+                  </button>
+
+                  <button type="button" class="btn btn-primary btn-floating mx-1">
+                    <i class="fab fa-google"></i>
+                  </button>
+
+                  <button type="button" class="btn btn-primary btn-floating mx-1">
+                    <i class="fab fa-twitter"></i>
+                  </button>
+
+                  <button type="button" class="btn btn-primary btn-floating mx-1">
+                    <i class="fab fa-github"></i>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+        <!--Section: Content-->
       </div>
+    </main>
+    <!--Main layout-->
+
+    <!--Footer-->
+    <footer class="bg-light text-lg-start">
+      <div class="py-4 text-center">
+        <a
+          role="button"
+          class="btn btn-primary btn-lg m-2"
+          href="https://www.youtube.com/channel/UC5CF7mLQZhvx8O5GODZAhdA"
+          rel="nofollow"
+          target="_blank"
+        >
+          Learn Bootstrap 5
+        </a>
+        <a
+          role="button"
+          class="btn btn-primary btn-lg m-2"
+          href="https://mdbootstrap.com/docs/standard/"
+          target="_blank"
+        >
+          Download MDB UI KIT
+        </a>
+      </div>
+
+      <hr class="m-0" />
+
+      <div class="text-center py-4 align-items-center">
+        <p>Follow MDB on social media</p>
+        <a
+          href="https://www.youtube.com/channel/UC5CF7mLQZhvx8O5GODZAhdA"
+          class="btn btn-primary m-1"
+          role="button"
+          rel="nofollow"
+          target="_blank"
+        >
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a
+          href="https://www.facebook.com/mdbootstrap"
+          class="btn btn-primary m-1"
+          role="button"
+          rel="nofollow"
+          target="_blank"
+        >
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a
+          href="https://twitter.com/MDBootstrap"
+          class="btn btn-primary m-1"
+          role="button"
+          rel="nofollow"
+          target="_blank"
+        >
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a
+          href="https://github.com/mdbootstrap/mdb-ui-kit"
+          class="btn btn-primary m-1"
+          role="button"
+          rel="nofollow"
+          target="_blank"
+        >
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2020 Copyright:
+        <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+      </div>
+      <!-- Copyright -->
     </footer>
-
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-
-   
-</body>
-</html>
+    <!--Footer-->
